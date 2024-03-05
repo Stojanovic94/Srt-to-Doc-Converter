@@ -1,10 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinFormsApp9
+namespace Srt_to_Doc_Converter
 {
     static class Program
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace WinFormsApp9
+namespace Srt_to_Doc_Converter
 {
     partial class Form1
     {
@@ -40,9 +40,9 @@ namespace WinFormsApp9
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new System.Drawing.Point(38, 11);
+            richTextBox1.Location = new System.Drawing.Point(12, 8);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new System.Drawing.Size(512, 288);
+            richTextBox1.Size = new System.Drawing.Size(540, 288);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = "";
             richTextBox1.TextChanged += richTextBox1_TextChanged;
@@ -51,9 +51,9 @@ namespace WinFormsApp9
             // 
             button2.Location = new System.Drawing.Point(570, 11);
             button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(66, 34);
+            button2.Size = new System.Drawing.Size(95, 34);
             button2.TabIndex = 2;
-            button2.Text = "Open";
+            button2.Text = "Open .srt";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -61,7 +61,7 @@ namespace WinFormsApp9
             // 
             button3.Location = new System.Drawing.Point(570, 265);
             button3.Name = "button3";
-            button3.Size = new System.Drawing.Size(66, 34);
+            button3.Size = new System.Drawing.Size(95, 34);
             button3.TabIndex = 3;
             button3.Text = "Clear All";
             button3.UseVisualStyleBackColor = true;
@@ -76,9 +76,9 @@ namespace WinFormsApp9
             // 
             button4.Location = new System.Drawing.Point(570, 119);
             button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(66, 34);
+            button4.Size = new System.Drawing.Size(95, 34);
             button4.TabIndex = 4;
-            button4.Text = "Save";
+            button4.Text = "Save As...";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
@@ -86,9 +86,9 @@ namespace WinFormsApp9
             // 
             button1.Location = new System.Drawing.Point(570, 66);
             button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(66, 34);
+            button1.Size = new System.Drawing.Size(95, 34);
             button1.TabIndex = 5;
-            button1.Text = "Convert";
+            button1.Text = "Convert text";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
@@ -96,7 +96,7 @@ namespace WinFormsApp9
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(677, 359);
+            ClientSize = new System.Drawing.Size(677, 308);
             Controls.Add(button1);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -104,7 +104,7 @@ namespace WinFormsApp9
             Controls.Add(richTextBox1);
             MaximizeBox = false;
             Name = "Form1";
-            Text = "Srt to Doc Converter 4.3.2024 ";
+            Text = "Srt to Doc Converter 5.3.2024 ";
             Load += Form1_Load;
             ResumeLayout(false);
         }

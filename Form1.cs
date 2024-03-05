@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Security.Permissions;
+using System.IO;
 
 
-namespace WinFormsApp9
+namespace Srt_to_Doc_Converter
 {
     public partial class Form1 : Form
     {
@@ -97,53 +92,80 @@ namespace WinFormsApp9
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            string srtContent = richTextBox1.Text;
+            string updatedText = RemoveNumberedLines(srtContent);
+           
+            updatedText = RemoveTimelines(updatedText);
 
-            //KORAK 1
-            var text = "";//Holds the text of current line being looped.
-            var startindex = 0;//The position where selection starts.
-            var endindex = 2000;//The length of selection.
-
-            for (int i = 0; i < richTextBox1.Lines.Length; i++)//Loops through each line of text in RichTextBox
-            {
-                text = richTextBox1.Lines[i];//Stores current line of text.
-                if (text.Contains("-->") == true)//Checks if the line contains MOVE STORAGE.
-                    
-                    {
-                    startindex = richTextBox1.GetFirstCharIndexFromLine(i);//If match is found the index of first char of that line is stored in startindex.
-                    endindex = text.Length;//Gets the length of line till semicolon and stores it in endindex.
-                    richTextBox1.Select(startindex, endindex);//Selects the text.
-                    richTextBox1.Text = richTextBox1.Text.Replace(richTextBox1.SelectedText, string.Empty);//Replaces the text with empty string.
-                }
-            }
-
-
-            //Korak 2
-            richTextBox1.Text = richTextBox1.Text.Remove(0, richTextBox1.Lines[0].Length);
-            //Brise prazna mesta na richtextbox
-            richTextBox1.Lines = richTextBox1.Lines.Where(line => line.Trim() != string.Empty).ToArray();
-
-            //KORAK 3
-            string[] lines = richTextBox1.Text.Split('\n');
-            StringBuilder updatedText = new StringBuilder();
-
-            for (int i = 0; i < lines.Length; i++)
-            {
-                if (i % 2 == 0) // Check if it's an even-numbered line
-                {
-                    updatedText.AppendLine(lines[i]);
-                }
-            }
-
-            richTextBox1.Text = updatedText.ToString();
-
-            //Korak 4 preuredi text
-            string mergedText = string.Join(" ", richTextBox1.Lines);
-            richTextBox1.Text = mergedText;
+            updatedText = CompactText(updatedText);
+            richTextBox1.Text = updatedText;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private string RemoveNumberedLines(string srtContent)
         {
-
+            StringBuilder result = new StringBuilder();
+            using (StringReader reader = new StringReader(srtContent))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    int lineNumber;
+                    if (!int.TryParse(line, out lineNumber))
+                    {
+                        result.AppendLine(line);
+                    }
+                }
+            }
+            return result.ToString();
         }
+ 
+        private string RemoveTimelines(string srtContent)
+        {
+            StringBuilder result = new StringBuilder();
+            using (StringReader reader = new StringReader(srtContent))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    if (!line.Contains("-->"))
+                    {
+                        result.AppendLine(line);
+                    }
+                }
+            }
+            return result.ToString();
+        }
+
+
+
+        private string CompactText(string input)
+        {
+            StringBuilder result = new StringBuilder();
+            bool previousCharWasWhitespace = false;
+
+            foreach (char c in input)
+            {
+                if (char.IsWhiteSpace(c))
+                {
+                    if (!previousCharWasWhitespace)
+                    {
+                        result.Append(' '); // Add a single space
+                        previousCharWasWhitespace = true;
+                    }
+                }
+                else
+                {
+                    result.Append(c);
+                    previousCharWasWhitespace = false;
+                }
+            }
+
+
+            return result.ToString().Trim();
+
+
+
+
     }
+}
 }

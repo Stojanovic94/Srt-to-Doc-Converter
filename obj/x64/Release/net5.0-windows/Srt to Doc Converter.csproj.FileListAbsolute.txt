@@ -1,0 +1,21 @@
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\bin\x64\Release\net5.0-windows\Srt to Doc Converter.exe
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\bin\x64\Release\net5.0-windows\Srt to Doc Converter.deps.json
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\bin\x64\Release\net5.0-windows\Srt to Doc Converter.runtimeconfig.json
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\bin\x64\Release\net5.0-windows\Srt to Doc Converter.runtimeconfig.dev.json
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\bin\x64\Release\net5.0-windows\Srt to Doc Converter.dll
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\bin\x64\Release\net5.0-windows\Srt to Doc Converter.pdb
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\bin\x64\Release\net5.0-windows\LanguageExt.Core.dll
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\bin\x64\Release\net5.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\Srt to Doc Converter.csproj.AssemblyReference.cache
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\Srt_to_Doc_Converter.Form1.resources
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\Srt to Doc Converter.csproj.GenerateResource.cache
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\Srt to Doc Converter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\Srt to Doc Converter.AssemblyInfoInputs.cache
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\Srt to Doc Converter.AssemblyInfo.cs
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\Srt to Doc Converter.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\Srt to D.968C2D73.Up2Date
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\Srt to Doc Converter.dll
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\refint\Srt to Doc Converter.dll
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\Srt to Doc Converter.pdb
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\Srt to Doc Converter.genruntimeconfig.cache
+C:\Users\Nikola\Desktop\Za github\Projekat 2\WinFormsApp9\obj\x64\Release\net5.0-windows\ref\Srt to Doc Converter.dll
