@@ -1,7 +1,7 @@
 # SRT to DOC Converter
 ## Overview
-SRT to DOC Converter is a C# application that allows you to convert SRT subtitle files from movies or YouTube videos into DOC format. This tool is useful for creating readable and editable subtitle documents.
-
+SRT to DOC Converter is a C# application that allows you to convert SRT subtitle files from movies or YouTube videos into DOC format. This tool is useful for creating readable and editable documents from subtitles.
+![](images/screenshot.PNG)
 # Features
 - Convert SRT files to DOC format
 - Easy to use interface
@@ -17,6 +17,7 @@ Build the solution by clicking on Build -> Build Solution or by pressing Ctrl + 
 Once the solution is built, you can run the application by clicking Debug -> Start Debugging or by pressing F5.
 
 # How to Use
+![](images/demo.gif)
 1. Open the Application:
 Run the executable file generated after building the solution (usually found in the bin/Debug or bin/Release directory).
 
