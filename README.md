@@ -26,3 +26,6 @@ Use the interface to load the SRT file you want to convert.
 
 2. Convert to DOC:
 Click on the 'Convert text' button to start the conversion process. Click on the 'Save As...' button to save the DOC file in the desired directory.
+
+# UPDATE 30 Jan. 2025
+- Added drag and drop for .srt files.
