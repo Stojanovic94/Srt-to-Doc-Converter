@@ -102,9 +102,13 @@ namespace Srt_to_Doc_Converter
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(richTextBox1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             Name = "Form1";
-            Text = "Srt to Doc Converter 5.3.2024 ";
+            ShowIcon = false;
+            SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Srt to Doc Converter 30.1.2025 ";
             Load += Form1_Load;
             ResumeLayout(false);
         }
